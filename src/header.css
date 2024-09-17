@@ -1,1 +1,35 @@
 /* Header styling */
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    height: 10vh;
+    background-color: #4A6FA5;
+}
+
+nav{
+    display: grid;
+    height: 10vh;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
+}
+
+.nav-button{
+    margin-top: 5vh;
+    height: 5vh;
+    width: 10rem;
+    background-color: aliceblue;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    border: 0px solid black;
+    font-size: 1.7rem;
+}
+
+.content{
+    height: 90vh;
+    background-image: url("dist\restuarant-image.webp");
+}
