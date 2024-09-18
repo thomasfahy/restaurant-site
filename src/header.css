@@ -39,8 +39,9 @@ nav{
     color: aliceblue;
 }
 
-.content{
+#content{
     height: 90vh;
-    background-image: url("dist\restuarant-image.webp");
+    background-image: url(".\src\restuarant-image.webp");
+    background-size: cover;
 }
 
