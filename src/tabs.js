@@ -4,7 +4,7 @@ import createRestaurantHomePage from "./restaurant"
 
 
 const createTabs = () => {
-    const content = document.querySelector('.content');
+    const header = document.querySelector('.header');
 
     const div1 = document.createElement('div');
     const div2 = document.createElement('div');
@@ -22,9 +22,9 @@ const createTabs = () => {
     div2.textContent = 'Menu';
     div3.textContent = 'Contact';
 
-    content.appendChild(div1);
-    content.appendChild(div2);
-    content.appendChild(div3);
+    header.appendChild(div1);
+    header.appendChild(div2);
+    header.appendChild(div3);
 
     div1.addEventListener('click', () => {
         clearContent();
