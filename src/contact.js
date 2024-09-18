@@ -5,7 +5,7 @@ const createRestaurantContactPage = () => {
 
     //Create and append headline
     const headline = document.createElement('h1');
-    headline.textContent = 'Contact us'
+    headline.textContent = 'Contact us';
     pageContent.appendChild(headline);
 
     content.appendChild(pageContent);

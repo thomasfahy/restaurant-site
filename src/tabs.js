@@ -1,3 +1,6 @@
+import createRestaurantContactPage from "./contact";
+import createRestaurantMenuPage from "./menu"
+import createRestaurantHomePage from "./restaurant"
 
 
 const createTabs = () => {
@@ -8,8 +11,8 @@ const createTabs = () => {
     const div3 = document.createElement('div');
 
     div1.setAttribute('id', 'home-button');
-    div2.setAttribute('id', 'home-button');
-    div3.setAttribute('id', 'home-button');
+    div2.setAttribute('id', 'menu-button');
+    div3.setAttribute('id', 'contact-button');
 
     div1.classList.add('tab');
     div2.classList.add('tab');
@@ -23,6 +26,27 @@ const createTabs = () => {
     content.appendChild(div2);
     content.appendChild(div3);
 
-}
+    div1.addEventListener('click', () => {
+        clearContent();
+        createRestaurantHomePage();
+    })
+    div2.addEventListener('click', () => {
+        clearContent();
+        createRestaurantMenuPage();
+    })
+    div3.addEventListener('click', () => {
+        clearContent();
+        createRestaurantContactPage();
+    })
+
+};
+
+function clearContent() {
+    const content = document.querySelector(".content");
+    const pageContent = document.querySelector(".page-content");
+    if (pageContent){
+        content.removeChild(pageContent);
+    }
+};
 
 export default createTabs;

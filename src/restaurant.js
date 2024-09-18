@@ -13,7 +13,7 @@ const createRestaurantHomePage = () => {
 
     //Create and append headline
     const headline = document.createElement('h1');
-    headline.textContent = 'Welcome to our amazing restaurant!'
+    headline.textContent = 'Welcome to our amazing restaurant!';
     pageContent.appendChild(headline);
 
     //create and append paragraph element
@@ -25,4 +25,4 @@ const createRestaurantHomePage = () => {
     content.appendChild(pageContent);
 }
 
-export default createRestaurantHomePage();
+export default createRestaurantHomePage;
