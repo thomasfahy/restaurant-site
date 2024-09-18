@@ -5,9 +5,16 @@
     margin: 0;
 }
 
+@font-face {
+    font-family: 'CustomFont';
+    src: url('../fonts/sunshine-tropical.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 header{
     height: 10vh;
-    background-color: #4A6FA5;
+    background-color: #FFD700;
 }
 
 nav{
@@ -23,13 +30,17 @@ nav{
     height: 5vh;
     width: 10rem;
     background-color: aliceblue;
-    border-top-left-radius: 0.5rem;
-    border-top-right-radius: 0.5rem;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
     border: 0px solid black;
-    font-size: 1.7rem;
+    font-family: 'CustomFont', sans-serif;
+    font-size: 2rem;
+    background-color: #2C2C2C;
+    color: aliceblue;
 }
 
 .content{
     height: 90vh;
     background-image: url("dist\restuarant-image.webp");
 }
+
