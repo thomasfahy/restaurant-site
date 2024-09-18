@@ -1,1 +1,4 @@
-console.log("console logged");
+import pageLoad from './pageLoad';
+
+//Load Page
+pageLoad();
