@@ -39,9 +39,13 @@ nav{
     color: aliceblue;
 }
 
+.nav-button:hover{
+    background-color: #131212;
+}
+
 #content{
     height: 90vh;
-    background-image: url(".\src\restuarant-image.webp");
+    background-color: #a89452;
     background-size: cover;
 }
 
