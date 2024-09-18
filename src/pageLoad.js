@@ -1,9 +1,11 @@
 import createRestaurantHomePage from './restaurant'
 import createRestaurantMenuPage from './restaurant'
 import createRestaurantContactPage from './restaurant'
+import createTabs from './tabs';
 
 function initialLoad() {
-    createRestaurantHomePage();
+    createTabs
+    createRestaurantMenuPage();
 }
 
 navButtons = document.querySelectorAll('.nav-button');
@@ -24,9 +26,5 @@ navButtons.forEach(button => {
         }
     })
 });
-
-
-
-
 
 export default initialLoad;
